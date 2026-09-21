@@ -20,10 +20,11 @@ if (roleText) {
 
 // Play showcase media on hover
 document.querySelectorAll('.content-box').forEach(box => {
+  const isMicroprojectsPage = document.body.classList.contains('microprojects-page');
   const video = box.querySelector('.showcase-section video');
   const image = box.querySelector('.showcase-section img[data-animated-src]');
 
-  if (video) {
+  if (!isMicroprojectsPage && video) {
     let thumbnailTime = null;
     const initThumbnail = () => {
       const pauseTime = video.dataset.pauseTime;
@@ -48,7 +49,7 @@ document.querySelectorAll('.content-box').forEach(box => {
     });
   }
 
-  if (image) {
+  if (!isMicroprojectsPage && image) {
     const animatedSrc = image.dataset.animatedSrc;
     const staticSrc = image.dataset.staticSrc || image.getAttribute('src');
 
@@ -67,13 +68,39 @@ document.querySelectorAll('.content-box').forEach(box => {
 
   // Make project card clickable
   const cardClickHref = box.dataset.cardHref;
-  if (cardClickHref) {
+  if (!isMicroprojectsPage && cardClickHref) {
     box.style.cursor = 'pointer';
     box.addEventListener('click', (e) => {
       if (e.target.closest('a')) {
         return;
       }
-      window.location.hash = cardClickHref;
+      window.location.href = cardClickHref;
     });
   }
 });
+
+const projectNavLinks = document.querySelectorAll('.project-side-nav a');
+const projectCards = document.querySelectorAll('.featured-project-card');
+
+if (projectNavLinks.length && projectCards.length) {
+  const setActiveProjectLink = () => {
+    let currentId = projectCards[0]?.id || '';
+
+    projectCards.forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if (rect.top <= window.innerHeight * 0.4 && rect.bottom >= window.innerHeight * 0.3) {
+        currentId = card.id;
+      }
+    });
+
+    projectNavLinks.forEach(link => {
+      const isActive = link.getAttribute('href') === `#${currentId}`;
+      link.classList.toggle('active', isActive);
+      link.setAttribute('aria-current', isActive ? 'true' : 'false');
+    });
+  };
+
+  setActiveProjectLink();
+  window.addEventListener('scroll', setActiveProjectLink, { passive: true });
+  window.addEventListener('resize', setActiveProjectLink);
+}

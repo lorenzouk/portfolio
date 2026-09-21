@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorenzo Uk - Projects</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Londrina+Outline&family=Rubik+Glitch&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/icons/logo.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="projects-page">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="home">
+            <a href="index.html" class="nav-link nav-home"><img src="img/icons/logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="microprojects.html" class="nav-link">Microprojects</a>
+    </nav>
+
+    <nav class="project-side-nav" aria-label="Project navigation">
+        <ul>
+            <li><a href="#riftshot">Riftshot</a></li>
+            <li><a href="#blind-polar-winds">Blind Polar Winds</a></li>
+            <li><a href="#slime-roller">Slime Roller</a></li>
+            <li><a href="#arcane-ascent">Arcane Ascent</a></li>
+            <li><a href="#bomb-golf">Bomb Golf</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Projects -->
+        <section class="project-showcase" id="projects">
+        <div class="projects-overlay">
+            <div class="projects">
+            <div class="projects-text">
+                <h1>Project Showcase</h1>
+                <p>My projects that showcase my game development and software engineering skills and contributions.</p>
+            </div>
+
+            <div class="featured-project-card" id="riftshot" aria-label="Featured project showcase card">
+                <div class="featured-project-header">
+                    <div>
+                        <h2>Riftshot</h2>
+                        <div class="project-role">Solo Developer</div>
+                        <div class="project-time">Indevelopment</div>
+                    </div>
+                    <div class="project-tech-icons" aria-label="Project engines and languages used">
+                        <img class="icon-img" src="img/icons/unity.svg" alt="Unity">
+                        <img class="icon-img" src="img/icons/c-plus-plus.svg" alt="C++">
+                    </div>
+                </div>
+
+                <div class="featured-images">
+                    <video autoplay muted loop playsinline data-pause-time="12.5">
+                        <source src="img/showcase/riftshot/riftshot.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <img src="img/showcase/riftshot/riftshot1.png" alt="Riftshot environment concept image">
+                </div>
+
+                <div class="project-details-stack">
+                    <div class="detail-block">
+                        <h3>Overview</h3>
+                        <p>Riftshot is an arena shooter where players fight in an arena with a variety of weapons and powerups. The game features fast-paced combat and strategic gameplay that challenges players to outmaneuver and outgun their opponents. This game is currently in early development, but I have implemented core gameplay mechanics such as player movement, shooting, and level design.</p>
+                        <h3>Features</h3>
+                        <ul>
+                            <li>Developed the core FPS gameplay loop</li>
+                            <li>Implemented client-server architecture and built a working server in Unity</li>
+                            <li>Implemented jump and launch pads that accelerate players giving more mobility</li>
+                            <li>Designed item pickup and usage systems so players can utilize them effectively</li>
+                        </ul>
+                        <div class="project-actions">
+                            <a class="project-link project-link-github" href="https://github.com/lorenzouk/projectapex" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Project Apex">
+                                <img src="img/icons/social-github.svg" alt="GitHub">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="featured-project-card" id="blind-polar-winds" aria-label="Featured project showcase card">
+                <div class="featured-project-header">
+                    <div>
+                        <h2>Blind Polar Winds</h2>
+                        <div class="project-role">Project Manager & Gameplay Programmer</div>
+                        <div class="project-time">10 Weeks ⋅ Team of 3</div>
+                    </div>
+                    <div class="project-tech-icons" aria-label="Project engines and languages used">
+                        <img class="icon-img" src="img/icons/typescript.svg" alt="TypeScript">
+                    </div>
+                </div>
+
+                <div class="featured-images">
+                    <video autoplay muted loop playsinline data-pause-time="12.5">
+                        <source src="img/showcase/blind/blind.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <img src="img/showcase/blind/blind1.png" alt="Blind Polar Winds environment concept image">
+                </div>
+
+                <div class="project-details-stack">
+                    <div class="detail-block">
+                        <h3>Overview</h3>
+                        <p>Blind Polar Winds is a modification for Nexus Games' Polar Winds. In this game, you connect each anchor points with one another by working with two other players to score as much points as possible before the timer runs out. In our modification, we blinded all players to their own colors and added rifts that give buffs or debuffs.</p>
+                        <h3>Contributions</h3>
+                        <ul>
+                            <li>Implemented rift mechanics that give buffs or debuffs</li>
+                            <li>Managed the project and coordinated development efforts</li>
+                            <li>Overhauled and designed the UI/UX by modifying the existing interface</li>
+                        </ul>
+                        <div class="project-actions">
+                            <a class="project-link project-link-github" href="https://github.com/lorenzouk/blind-polar-winds" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Arcane Ascent">
+                                <img src="img/icons/social-github.svg" alt="GitHub">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-project-card" id="slime-roller" aria-label="Featured project showcase card">
+                <div class="featured-project-header">
+                    <div>
+                        <h2>Project: Slime Roller</h2>
+                        <div class="project-role">World Builder & Systems Developer</div>
+                        <div class="project-time">3 Days ⋅ Team of 6</div>
+
+                    </div>
+                    <div class="project-tech-icons" aria-label="Project engines and languages used">
+                        <img class="icon-img" src="img/icons/unity.svg" alt="Unity">
+                        <img class="icon-img" src="img/icons/c-plus-plus.svg" alt="C++">
+                    </div>
+                </div>
+
+                <div class="featured-images">
+                    <video autoplay muted loop playsinline data-pause-time="12.5">
+                        <source src="img/showcase/slime/slime.mp4" type="video/mp4">
+                        Your browser does not support HTML5 video.
+                    </video>
+                    <img src="img/showcase/slime/slime1.png" alt="Slime Roller environment concept image">
+                </div>
+
+                <div class="project-details-stack">
+                    <div class="detail-block">
+                        <h3>Overview</h3>
+                        <p>Slime Roller is a physics-based puzzle platformer where you control an experimental slime desperate to break out of a high-tech research facility. The player must look at their surroundings and use various power-ups to roll past obstacles and security. Each power up has it's strengths and weaknesses, and the player must use them wisely to progress through the levels.</p>
+                        <h3>Contributions</h3>
+                        <ul>
+                            <li>Designed level layouts and world environment that enables strategic gameplay</li>
+                            <li>Implemented door system and key collection mechanics</li>
+                            <li>Implemented sound design and music to enhance the player experience</li>
+                        </ul>
+                        <div class="project-actions">
+                        <a class="project-link project-link-github" href="https://github.com/Edison272/SlimeRoller" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Arcane Ascent">
+                            <img src="img/icons/social-github.svg" alt="GitHub">
+                            <span>GitHub</span>
+                        </a>
+                        <a class="project-link project-link-primary" href="https://lorenzouk.itch.io/project-slime-roller" target="_blank" rel="noopener noreferrer">
+                            <span>Play Full Game</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-project-card" id="arcane-ascent" aria-label="Featured project showcase card">
+                <div class="featured-project-header">
+                    <div>
+                        <h2>Arcane Ascent</h2>
+                        <div class="project-role">Gameplay & Systems Developer</div>
+                        <div class="project-time">2 Weeks ⋅ Team of 2</div>
+
+                    </div>
+                    <div class="project-tech-icons" aria-label="Project engines and languages used">
+                        <img class="icon-img" src="img/icons/godot.svg" alt="Godot">
+                        <img class="icon-img" src="img/icons/python.svg" alt="Python">
+                        <img class="icon-img" src="img/icons/adobe-photoshop.svg" alt="Adobe Photoshop">
+                    </div>
+                </div>
+
+                <div class="featured-images">
+                        <video autoplay muted loop playsinline data-pause-time="10">
+                            <source src="img/showcase/arcaneascent/arcaneascent.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    <img src="img/showcase/arcaneascent/arcaneascent1.png" alt="Arcane Ascent environment concept image">
+                </div>
+
+                <div class="project-details-stack">
+                    <div class="detail-block">
+                        <h3>Overview</h3>
+                        <p>Arcane Ascent is a roguelike action game where players take on the role of a wizard traversing through a multi-level tower filled with diverse enemies. The game features spell-based combat and strategic progression that challenges players to adapt their tactics as difficulty increases. The game uses procedural generation systems to create a unique experience every playthrough.</p>
+                        <h3>Contributions</h3>
+                        <ul>
+                            <li>Designed and developed gameplay elements, including the combat system, spells</li>
+                            <li>Built a settings menu with custom user keybindings and audio configurations using local file I/O</li>
+                            <li>Developed unique enemy behaviors and AI to create different challenges for players</li>
+                        </ul>
+                        <div class="project-actions">
+                        <a class="project-link project-link-github" href="https://github.com/Simpanzee/Arcane-Ascent" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Arcane Ascent">
+                            <img src="img/icons/social-github.svg" alt="GitHub">
+                            <span>GitHub</span>
+                        </a>
+                        <a class="project-link project-link-primary" href="https://simpanzee05.itch.io/arcane-ascent" target="_blank" rel="noopener noreferrer">
+                            <span>Play Full Game</span>
+                        </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="featured-project-card" id="bomb-golf" aria-label="Featured project showcase card">
+                <div class="featured-project-header">
+                    <div>
+                        <h2>Bomb Golf</h2>
+                        <div class="project-role">Gameplay & Systems Developer</div>
+                        <div class="project-time">1 Week ⋅ Team of 5</div>
+
+                    </div>
+                    <div class="project-tech-icons" aria-label="Project engines and languages used">
+                        <img class="icon-img" src="img/icons/three.png" alt="Three.js">
+                        <img class="icon-img" src="img/icons/typescript.svg" alt="TypeScript">
+                        <img class="icon-img" src="img/icons/html5.svg" alt="HTML">
+                        <img class="icon-img" src="img/icons/css.svg" alt="CSS">
+                    </div>
+                </div>
+
+                <div class="featured-images">
+                        <video autoplay muted loop playsinline data-pause-time="10">
+                            <source src="img/showcase/bombgolf/bombgolf.mp4" type="video/mp4">
+                            Your browser does not support HTML5 video.
+                        </video>
+                    <img src="img/showcase/bombgolf/bombgolf1.png" alt="Bomb Golf environment concept image">
+                </div>
+
+                <div class="project-details-stack">
+                    <div class="detail-block">
+                        <h3>Overview</h3>
+                        <p>Bomb Golf is an interactive 3D golf game with a high stakes twist. Players have a limited number of attempts to sink the bomb into the hole. Failure results in an explosion. At the start, players collect turns, adding a strategic layer that makes the game more manageable. This project focuses on 3D rendering, game patterns and team-based development.</p>
+                        <h3>Contributions</h3>
+                        <ul>
+                            <li>Developed golf mechanic and physics simulation</li>
+                            <li>Added VFX to bomb and designed golf course layout</li>
+                            <li>Refactored code for improved performance and maintainability</li>
+                            <li>Designed concept and logic of the game and mechanics</li>
+                        </ul>
+                        <div class="project-actions">
+                            <a class="project-link project-link-github" href="https://github.com/lorenzouk/bomb-golf" target="_blank" rel="noopener noreferrer" aria-label="GitHub repository for Bomb Golf">
+                                <img src="img/icons/social-github.svg" alt="GitHub">
+                                <span>GitHub</span>
+                            </a>
+                            <a class="project-link project-link-primary" href="https://lorenzouk.github.io/bomb-golf/" target="_blank" rel="noopener noreferrer">
+                                <span>Play Full Game</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <nav class="socials" id="socials" aria-label="Social media links">
+                    <a href="mailto:lorenzokiri.uk@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                        <img src="img/icons/social-email.svg" alt="Email" class="social-icon" width="40" height="40">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lorenzo-uk/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="img/icons/social-linkedin.svg" alt="LinkedIn" class="social-icon" width="40" height="40">
+                    </a>
+                    <a href="downloads/lorenzo_uk_resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume">
+                        <img src="img/icons/resume.svg" alt="Resume" class="social-icon" width="40" height="40">
+                    </a>
+                    </nav>
+            <p class="copyright">&copy; 2025-2026 Lorenzo Uk | All rights reserved</p>
+        </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

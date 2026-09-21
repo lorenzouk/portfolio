@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lorenzo Uk</title>
+    <title>Lorenzo Uk - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
@@ -16,11 +16,11 @@
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="home">
-            <a href="#"><img src="img/icons/logo.png" alt="Logo" class="logo"></a>
+            <a href="index.html" class="nav-link nav-home active"><img src="img/icons/logo.png" alt="Logo" class="logo"></a>
         </div>
-        <a href="">About Me</a>
-        <a href="#projects">Projects</a>
-        <a href="">Microprojects</a>
+        <a href="about.html" class="nav-link">About Me</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="microprojects.html" class="nav-link">Microprojects</a>
     </nav>
 
     <main>
@@ -47,7 +47,25 @@
             <div class="bio-container">
                 <div class="bio-content">
                     <h3>DEV_PROFILE</h3>
-                    <p class="bio-text">Specialize in computer programming, game engines, and interactive systems development. Passionate about back-end development, artificial intelligence, and building games from ground up and creating experiences.</p>
+                    <p class="bio-text">Specialize in computer programming, game engines, and interactive systems development. Passionate about back-end development, artificial intelligence, and building games from ground up and creating experiences. If you're interested in my work, please reach out!</p>            
+                    <nav class="socials" id="socials" aria-label="Social media links">
+                    <a href="downloads/lorenzo_uk_resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="itch.io">
+                        <img src="img/icons/resume.svg" alt="itch.io" class="social-icon" width="40" height="40">
+                    </a>
+                    <a href="mailto:lorenzokiri.uk@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                        <img src="img/icons/social-email.svg" alt="Email" class="social-icon" width="40" height="40">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lorenzo-uk/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="img/icons/social-linkedin.svg" alt="LinkedIn" class="social-icon" width="40" height="40">
+                    </a>
+
+                    <a href="https://github.com/lorenzouk" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <img src="img/icons/social-github.svg" alt="GitHub" class="social-icon" width="40" height="40">
+                    </a>
+                    <a href="https://lorenzouk.itch.io/" target="_blank" rel="noopener noreferrer" aria-label="itch.io">
+                        <img src="img/icons/itchio-logo-textless-black.svg" alt="itch.io" class="social-icon" width="40" height="40">
+                    </a>
+                    </nav>
                 </div>
                 <div class="tech-stack">
                     <h4>Tech Stack</h4>
@@ -88,10 +106,10 @@
             <div class="projects-carousel" aria-label="Project carousel">
                 <div class="projects-track" id="projects-track">
 
-                <div class="content-box content-box-split" data-card-href="#">
+                <div class="content-box content-box-split" data-card-href="projects.html#riftshot">
                     <div class="showcase-section">
                     <video autoplay muted loop playsinline data-pause-time="12.5">
-                        <source src="img/showcase/riftshot.mp4" type="video/mp4">
+                        <source src="img/showcase/riftshot/riftshot.mp4" type="video/mp4">
                         Your browser does not support HTML5 video.
                     </video>
                     </div>
@@ -116,10 +134,10 @@
                     </div>
                 </div>
 
-                <div class="content-box content-box-split" data-card-href="#">
+                <div class="content-box content-box-split" data-card-href="projects.html#blind-polar-winds">
                     <div class="showcase-section">
                         <video autoplay muted loop playsinline data-pause-time="100">
-                            <source src="img/showcase/blind.mp4" type="video/mp4">
+                            <source src="img/showcase/blind/blind.mp4" type="video/mp4">
                             Your browser does not support HTML5 video.
                         </video>
                     </div>
@@ -139,10 +157,10 @@
                     </div>
                 </div>
 
-                <div class="content-box content-box-split" data-card-href="#">
+                <div class="content-box content-box-split" data-card-href="projects.html#slime-roller">
                     <div class="showcase-section">
                         <video autoplay muted loop playsinline data-pause-time="20">
-                            <source src="img/showcase/slime.mp4" type="video/mp4">
+                            <source src="img/showcase/slime/slime.mp4" type="video/mp4">
                             Your browser does not support HTML5 video.
                         </video>
                     </div>
@@ -168,10 +186,10 @@
                     </div>
                 </div>
 
-                <div class="content-box content-box-split" data-card-href="#">
+                <div class="content-box content-box-split" data-card-href="projects.html#arcane-ascent">
                     <div class="showcase-section">
                         <video autoplay muted loop playsinline data-pause-time="10">
-                            <source src="img/showcase/arcaneascent.mp4" type="video/mp4">
+                            <source src="img/showcase/arcaneascent/arcaneascent.mp4" type="video/mp4">
                             Your browser does not support HTML5 video.
                         </video>
                     </div>
@@ -199,12 +217,27 @@
                         </div> 
                     </div>
                 </div>
-
                 </div>
             </div>
             </div>
         </div>
         </section>
+
+        <!-- Footer -->
+        <footer>
+            <nav class="socials" id="socials" aria-label="Social media links">
+                    <a href="mailto:lorenzokiri.uk@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email">
+                        <img src="img/icons/social-email.svg" alt="Email" class="social-icon" width="40" height="40">
+                    </a>
+                    <a href="https://www.linkedin.com/in/lorenzo-uk/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <img src="img/icons/social-linkedin.svg" alt="LinkedIn" class="social-icon" width="40" height="40">
+                    </a>
+                    <a href="downloads/lorenzo_uk_resume.pdf" target="_blank" rel="noopener noreferrer" aria-label="Resume">
+                        <img src="img/icons/resume.svg" alt="Resume" class="social-icon" width="40" height="40">
+                    </a>
+                    </nav>
+            <p class="copyright">&copy; 2025-2026 Lorenzo Uk | All rights reserved</p>
+        </footer>
   </main>
   <script src="script.js"></script>
 </body>
